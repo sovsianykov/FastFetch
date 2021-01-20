@@ -25,7 +25,7 @@ const pic = document.querySelector('#picture')
 let catStore = [];
 async function myFetch() {
     try {
-        let response = await fetch('https://api.thecatapi.com/v1/images/search?limit=2&page=10&order=Desc');
+        let response = await fetch('https://api.thecatapi.com/v1/images/search?limit=5&page=10&order=Desc');
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
